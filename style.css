@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: #ff4880;
+    transition: transform 0.3s ease-in;
+    /* width: 280px; */
+}
+
+.sidebar nav {
+    padding: 72px 18px;
+    font-size: 30px;
+    height: 2000px;
+}
+
+.sidebar nav li a{
+   text-decoration: none;
+   color: black; 
+}
+
+body{
+   background-color: #f9d9e3; 
+ }
+
+.main {
+    /* background-color: yellow; */
+    height: 100vh;
+    width: 90vw;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 1px 0px 60px; 
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /* background-color: blueviolet; */
+    margin: 144px auto;
+    height: 45vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    font-family: "Source Code Pro", monospace;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello{
+    font-size: 70px;
+}
+
+.name{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.about{
+    font-size: 40px;
+}
+
+.moreabout{
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.devPic img{
+    height: 45vh;
+}
+
+.buttons{
+    margin-top: 22px;   
+}
+
+.buttons .btn{
+    color: #ffffff;
+    background-color:#ff4880;
+    border-radius: 27px;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 9px 14px;
+}
+
+.buttons .btn:hover{
+    color: #127be1; 
+    background-color: #ffffff;
+}
+
+.btn-sm{
+    color: #ffffff;
+    background-color:#ff4880;
+    border-radius: 27px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 8px 13px;
+    margin-left: 15px;
+}
+
+
+/* Contact Form Css */
+
+.contactform{
+    padding-top: 50px;
+    margin-left: 130px;
+}
+
+.contactform h1{
+    padding-top: 50px;
+    margin-left: 111px;
+}
+
+.contactform div{
+    margin-left: 100px;
+}
+
+.contactform div label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 25px;
+    margin: 0px;
+}
+
+
+.contactform input{
+    padding: 3px 0px;
+    margin: 21px;
+    height: 23px;
+    width: 345px;
+    border-radius: 10px;
+    color: black;
+}
+
+
+/* Blog Page Css */
+.blogContainer{
+    margin-left: 215px;
+}
+
+.blogContainer h1{
+margin: 30px;
+}
+
+.blogContainer h2{
+    margin: 20px 20px;  
+}
+
+.blogContainer p{
+    margin: 10px 10px;
+    margin-left: 22px; 
+}
+
+
+/* Intro Page Css */
+
+.intro{
+    margin-left: 200px;
+}
+
+.intro h2{
+    margin: 12px;
+}
+
+.intro h3{
+    margin: 12px;
+}
+
+.intro p{
+    margin: 12px;
+}
+
+.Skillcontainer{
+    .intro_more{
+      display: flex;
+      align-items: center;  
+    }
+margin: 12px;
+font-weight: 900;
+}
+
+.skillitem {
+    display: flex;
+    
+}
+
+.skill{
+    height: 10px;
+    width: 400px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.skill_100{
+    width: 380px;
+    background-color: red;
+}
+
+.skill_75{
+    width: 300px;
+    background-color: rgb(242, 51, 182);
+}
+
+.skill_50{
+    width: 200px;
+    background-color: rgb(60, 255, 0);
+}
+
+.skill_25{
+    width: 100px;
+    background-color: rgb(193, 239, 41);
+}
+
+
+.sidebarGo{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+
+.hemberg{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.crose{
+    margin-left: 130px;
+}
+
+/* Css for responcive this side */
+
+@media (max-width: 1500px) {
+    
+    .devPic{
+        display: none;
+    }
+    .blogContainer{
+      
+        margin: 58px -1px;
+    }
+ .contactform{
+    margin: -5px -107px;
+ }
+ .intro{
+    margin-left: 10px;
+    margin-top: 95px;
+}
+ }
